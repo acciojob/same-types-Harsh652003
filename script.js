@@ -1,17 +1,15 @@
 function isSameType(value1, value2) {
   //your js code here
-	
-  
+ // Check if both values are NaN
   if (Number.isNaN(value1) && Number.isNaN(value2)) {
     return true;
   }
-  return typeof value1 === typeof value2;
-	
- Cypress.on('uncaught:exception', (err, runnable) => {
-  
-  return false;
 
+  // Compare types using typeof
+  return typeof value1 === typeof value2;
 }
+
+
 
 
 
